@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeff Pollard | Visual Storytelling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+
+    .headshot {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+      background-color: #f0f0f0;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .form-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form textarea {
+      grid-column: span 2;
+      resize: vertical;
+    }
+
+    .consent {
+      grid-column: span 2;
+      text-align: left;
+      font-size: 0.9em;
+    }
+
+    .submit-btn {
+      grid-column: span 2;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .brands-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .brands-section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .brands-section p {
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 10px 0;
+      scroll-snap-type: x mandatory;
+    }
+
+    .carousel img {
+      height: 60px;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel img:hover {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">[Logo]</div>
+  </header>
+
+  <section class="hero">
+    <div class="headshot">[Headshot]</div>
+    <h1>Jeff Pollard</h1>
+    <p>Curating stories and visual impact across platforms</p>
+    <p><em>Short Bio … Featured in Shout LA</em></p>
+  </section>
+
+  <section class="form-section">
+    <h2>Feature Me</h2>
+    <form>
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Instagram Handle" required />
+      <input type="text" placeholder="Brand/Organization (optional)" />
+      <textarea rows="4" placeholder="Short bio"></textarea>
+      <label class="consent">
+        <input type="checkbox" required /> I consent to be featured
+      </label>
+      <button class="submit-btn">Get Featured</button>
+    </form>
+  </section>
+
+  <section class="brands-section">
+    <h2>Brands we’ve worked with</h2>
+    <p>We spotlight brands, creators, and causes that align with @JeffPollard11’s visual ethos.</p>
+    <div class="carousel">
+      <img src="https://via.placeholder.com/120x60?text=Logo+1" alt="Logo 1"/>
+      <img src="https://via.placeholder.com/120x60?text=Logo+2" alt="Logo 2"/>
+      <img src="https://via.placeholder.com/120x60?text=Logo+3" alt="Logo 3"/>
+      <img src="https://via.placeholder.com/120x60?text=Logo+4" alt="Logo 4"/>
+      <img src="https://via.placeholder.com/120x60?text=Logo+5" alt="Logo 5"/>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Jeff Pollard. All rights reserved.
+  </footer>
+
+</body>
+</html>
